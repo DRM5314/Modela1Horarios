@@ -1,0 +1,144 @@
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10;
+}
+
+.divReporte{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    margin: 50;
+}
+
+/* Estilos para el contenedor de las tablas */
+.tabla-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar horizontalmente dentro del contenedor */
+    align-items: center; /* Centrar verticalmente dentro del contenedor */
+}
+
+/* Estilos para los iframes */
+iframe {
+    margin:10px;
+    border: 1px solid #ddd; /* Estilo de borde */
+    background-color: #f2f2f2; /* Color de fondo de los iframes */
+    padding: 10px; /* Espaciado interno */
+}
+/* Estilo para la tabla */
+.mi-tabla {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mi-tabla th, .mi-tabla td {
+    border: 4px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius : 8px;
+    border: 2px solid #6f7357;
+}
+
+.mi-tabla th {
+    background-color: #f2f2f2;
+}
+.tabla-Asignacion th, .tabla-Asignacion td{
+    border: 4px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius : 10px;
+    border: 2px solid #6f7357;
+}
+
+.tabla-reporteAsignacion th, .tabla-reporteAsignacion td{
+    border: 4px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius : 8px;
+    border: 2px solid #6f7357;
+}
+
+.tabla-reporteNoabierto th{
+    background-color:#c8b6a9;
+    border: 4px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        border-radius : 8px;
+        border: 2px solid #6f7357;
+}
+
+
+.tabla-reporteNoabierto td{
+    color:red;
+    background-color:#e0968d;
+    border: 4px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        border-radius : 8px;
+        border: 2px solid #6f7357;
+}
+
+.tabla-Entradas th{
+    background-color:#e28d55;
+    border: 4px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        border-radius : 8px;
+        border: 2px solid #6f7357;
+}
+
+.tabla-Entradas td{
+    background-color:#c09a8c;
+    border: 4px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        border-radius : 8px;
+        border: 2px solid #6f7357;
+}
+/* Estilo para filas de colores */
+.fila-Codigo {
+    background-color: #c8ad8d;
+    color: white;
+}
+
+.fila-Valor {
+    background-color: #e4c5c4;
+    color: white;
+}
+
+.fila-Salon {
+    background-color: #7e4400;
+    color: white;
+}
+
+.fila-Asignacion {
+    background-color: #c8ad8d;
+    color: white;
+    width: 200px; /* Ancho de la columna */
+    height: 100px;
+    shape-outside: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%); /* Forma personalizada */
+    margin-right: 10px; /* Espacio entre columnas */
+    padding: 20px; /* Espacio interno */
+}
+
+.descripcionAsignacion li{
+    list-style-type: none;
+    width:0em;
+}
+
+.descripcionAsignacion li::before{
+   margin-left: 50px; /* Espacio entre el punto y el texto */
+       display: inline-block;
+
+}
+
+.fila-Hora {
+    background-color: #f6a700;
+    color: white;
+}

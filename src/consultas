@@ -1,0 +1,13 @@
+// Agrupacion por semestres ordenado por + cantidad de asignados
+select m.codigo, p.numeroAsignaciones, m.semestre, m.codigoCarrera from preAsignacion as p inner join materia m where p.codigoMateria = m.codigo order by m.codigoCarrera,m.semestre,p.numeroAsignaciones desc;
+
+//Consulta de carreras y semestres que estan pre asignados
+
+SELECT m.codigoCarrera, m.semestre, p.codigoMateria FROM materia AS m INNER JOIN preAsignacion AS p where m.codigo = p.codigoMateria
+and p.numeroAsignaciones > 5
+group by m.semestre;
+
+
+
+// Se obtiene la carrera juntos a los semestres a los que se solicita la apertura cursos
+select m.semestre, m.codigoCarrera, m.codigo from materia as m where m.codigo = (select p.codigoMateria from preAsignacion p where p.codigoMateria = m.codigo) group by m.semestre,m.codigoCarrera order by m.codigoCarrera DESC;
